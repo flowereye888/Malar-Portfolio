@@ -1,32 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malar's Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #eef4ff;
-      text-align: center;
-      padding: 60px 20px;
-      color: #183153;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07111f">
+    <meta
+      name="description"
+      content="Malar's portfolio — Azure cloud engineering, infrastructure as code, and reliable cloud architecture."
+    >
+    <title>Malar — Azure Cloud Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Malar home">
+          <span class="brand-mark" aria-hidden="true">M<span>.</span></span>
+          <span class="brand-name">malar<span class="brand-divider">/</span><span>cloud</span></span>
+        </a>
 
-    .card {
-      max-width: 600px;
-      margin: auto;
-      padding: 40px;
-      background: white;
-      border-radius: 20px;
-    }
-  </style>
-</head>
-<body>
-  <main class="card">
-    <h1>Hi, I am Malar!</h1>
-    <p>Welcome to my cloud learning portfolio.</p>
-    <p>My first project: VS Code → GitHub → Azure.</p>
-  </main>
-</body>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#work">Projects</a>
+          <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> AZURE CLOUD ENGINEER <span class="eyebrow-line"></span> CLOUD PORTFOLIO</p>
+          <h1 id="hero-title">Cloud that works.<br><span>Built to go</span> <span class="text-accent">further.</span></h1>
+          <p class="hero-description">
+            Hi, I’m Malar — I turn complex cloud challenges into secure,
+            resilient Azure solutions that are ready for what’s next.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <span>Thoughtful architecture. <strong>Real-world impact.</strong></span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of an Azure cloud architecture">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="art-label art-label-top"><span class="pulse-dot"></span> CLOUD SYSTEM / 01</div>
+          <div class="cloud-core">
+            <div class="cloud-glow"></div>
+            <svg viewBox="0 0 88 64" role="img" aria-label="Cloud">
+              <path d="M67.8 26.1A24 24 0 0 0 21.2 21a17 17 0 0 0 1.8 33.9h43a14.4 14.4 0 0 0 1.8-28.8Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="m34 38 8 8 14-16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>AZURE</span>
+          </div>
+          <div class="service-node node-app"><span class="node-icon">⌘</span><span>APP SERVICE</span></div>
+          <div class="service-node node-db"><span class="node-icon">▤</span><span>DATABASE</span></div>
+          <div class="service-node node-sec"><span class="node-icon">⬡</span><span>IDENTITY</span></div>
+          <div class="service-node node-data"><span class="node-icon">⌁</span><span>NETWORK</span></div>
+          <div class="connection connection-app"></div>
+          <div class="connection connection-db"></div>
+          <div class="connection connection-sec"></div>
+          <div class="connection connection-data"></div>
+          <div class="art-label art-label-bottom"><span>◎</span> SECURE BY DESIGN <span class="label-separator">/</span> BUILT FOR SCALE</div>
+          <span class="art-spark spark-one" aria-hidden="true">✳</span>
+          <span class="art-spark spark-two" aria-hidden="true">+</span>
+        </div>
+
+        <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="intro section-shell section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-kicker"><span>01</span><span class="kicker-rule"></span> THE PERSON BEHIND THE CLOUD</div>
+        <div class="intro-grid">
+          <h2 id="about-title">Good cloud engineering is <span>invisible</span> — until you need it.</h2>
+          <div class="intro-copy">
+            <p>
+              I’m an Azure-focused cloud engineer who enjoys making the
+              infrastructure behind great products feel effortless. I bring
+              curiosity, care, and a reliability-first mindset to every
+              architecture decision.
+            </p>
+            <p>
+              From shaping cloud foundations to automating deployments, I
+              focus on solutions that are secure, maintainable, and built
+              around the people who use them.
+            </p>
+            <a class="inline-link" href="#contact">More about working together <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="expertise section-shell section-pad" id="expertise" aria-labelledby="expertise-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker"><span>02</span><span class="kicker-rule"></span> WHAT I BRING</div>
+            <h2 id="expertise-title">Cloud, with <span>intention.</span></h2>
+          </div>
+          <p class="section-aside">The right tools matter.<br>The thinking behind them matters more.</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <div class="card-topline"><span class="card-number">01</span><span class="card-symbol" aria-hidden="true">⌘</span></div>
+            <h3>Cloud architecture</h3>
+            <p>Designing dependable Azure environments with security, scale, and clarity built in from the start.</p>
+            <div class="tag-list"><span>Azure</span><span>Networking</span><span>Identity</span></div>
+          </article>
+          <article class="expertise-card">
+            <div class="card-topline"><span class="card-number">02</span><span class="card-symbol" aria-hidden="true">⌁</span></div>
+            <h3>Infrastructure as code</h3>
+            <p>Making infrastructure repeatable and easier to evolve through clean, automated deployments.</p>
+            <div class="tag-list"><span>Bicep</span><span>Terraform</span><span>Git</span></div>
+          </article>
+          <article class="expertise-card">
+            <div class="card-topline"><span class="card-number">03</span><span class="card-symbol" aria-hidden="true">◉</span></div>
+            <h3>DevOps &amp; delivery</h3>
+            <p>Connecting code to cloud with practical CI/CD workflows that help teams ship with confidence.</p>
+            <div class="tag-list"><span>Azure DevOps</span><span>GitHub Actions</span><span>CI/CD</span></div>
+          </article>
+          <article class="expertise-card">
+            <div class="card-topline"><span class="card-number">04</span><span class="card-symbol" aria-hidden="true">✳</span></div>
+            <h3>Reliability &amp; security</h3>
+            <p>Building in visibility and guardrails, so systems stay easier to understand, protect, and improve.</p>
+            <div class="tag-list"><span>Monitor</span><span>Entra ID</span><span>Governance</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-shell section-pad" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker"><span>03</span><span class="kicker-rule"></span> SELECTED WORK</div>
+            <h2 id="work-title">Ideas, made <span>real.</span></h2>
+          </div>
+          <p class="section-aside">A few cloud-shaped problems<br>worth solving.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-card project-blue">
+            <div class="project-art project-art-network" aria-hidden="true">
+              <span class="network-node network-node-a"></span><span class="network-node network-node-b"></span>
+              <span class="network-node network-node-c"></span><span class="network-node network-node-d"></span>
+              <span class="network-link network-link-a"></span><span class="network-link network-link-b"></span>
+              <span class="network-link network-link-c"></span><span class="network-link network-link-d"></span>
+              <span class="network-center">VNET</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>AZURE NETWORKING</span><span>01 / 03</span></div>
+              <h3>A resilient cloud foundation</h3>
+              <p>A secure landing-zone concept that brings identity, network boundaries, and governance together in one clear starting point.</p>
+              <div class="tag-list"><span>Azure</span><span>Architecture</span><span>Security</span></div>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project-card project-violet">
+            <div class="project-art project-art-pipeline" aria-hidden="true">
+              <div class="pipeline-step"><span>01</span><i></i><b>CODE</b></div>
+              <div class="pipeline-step"><span>02</span><i></i><b>BUILD</b></div>
+              <div class="pipeline-step"><span>03</span><i></i><b>SHIP</b></div>
+              <div class="pipeline-track"></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>DEVOPS &amp; AUTOMATION</span><span>02 / 03</span></div>
+              <h3>From commit to cloud</h3>
+              <p>A CI/CD workflow concept for validating infrastructure changes and moving deployments through clear, repeatable stages.</p>
+              <div class="tag-list"><span>GitHub Actions</span><span>Bicep</span><span>CI/CD</span></div>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project-card project-green">
+            <div class="project-art project-art-observe" aria-hidden="true">
+              <span class="observe-ring ring-one"></span><span class="observe-ring ring-two"></span>
+              <span class="observe-ring ring-three"></span><span class="observe-core"></span>
+              <span class="observe-label observe-label-a">METRICS</span><span class="observe-label observe-label-b">ALERTS</span>
+              <span class="observe-label observe-label-c">TRACES</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>OBSERVABILITY</span><span>03 / 03</span></div>
+              <h3>See the whole picture</h3>
+              <p>An observability blueprint connecting useful signals, actionable alerts, and operational insight for cloud workloads.</p>
+              <div class="tag-list"><span>Azure Monitor</span><span>Log Analytics</span><span>Reliability</span></div>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+        <p class="project-footnote"><span aria-hidden="true">✳</span> Project concepts — details and implementation links can be added as work is published.</p>
+      </section>
+
+      <section class="toolkit section-shell section-pad" aria-labelledby="toolkit-title">
+        <div class="section-kicker"><span>04</span><span class="kicker-rule"></span> THE TOOLKIT</div>
+        <div class="toolkit-row">
+          <h2 id="toolkit-title">A practical stack.<br><span>Always learning.</span></h2>
+          <div class="toolkit-content">
+            <p>Cloud platforms and tools I use to turn good ideas into dependable systems.</p>
+            <div class="toolkit-list">
+              <span class="tool-pill"><i class="azure-mark"></i> Microsoft Azure</span>
+              <span class="tool-pill"><i class="tool-dot dot-blue"></i> Azure DevOps</span>
+              <span class="tool-pill"><i class="tool-dot dot-cyan"></i> Bicep</span>
+              <span class="tool-pill"><i class="tool-dot dot-violet"></i> Terraform</span>
+              <span class="tool-pill"><i class="tool-dot dot-green"></i> GitHub Actions</span>
+              <span class="tool-pill"><i class="tool-dot dot-orange"></i> PowerShell</span>
+              <span class="tool-pill"><i class="tool-dot dot-pink"></i> Microsoft Entra ID</span>
+              <span class="tool-pill"><i class="tool-dot dot-white"></i> Azure Monitor</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="section-kicker"><span>05</span><span class="kicker-rule"></span> YOUR NEXT CLOUD IDEA</div>
+        <div class="contact-content">
+          <div>
+            <p class="contact-overline">Have a good one?</p>
+            <h2 id="contact-title">Let’s make it<br><span>cloud-ready.</span></h2>
+          </div>
+          <div class="contact-aside">
+            <p>I’m always happy to talk cloud, share ideas, and explore what we could build together.</p>
+            <a class="button button-light" href="https://github.com/flowereye888" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="contact-bottom"><span>OPEN TO CLOUD CONVERSATIONS</span><span class="contact-spark" aria-hidden="true">✳</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand footer-brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">M<span>.</span></span>
+        <span class="brand-name">malar<span class="brand-divider">/</span><span>cloud</span></span>
+      </a>
+      <p>Designed with care. Built for the cloud.</p>
+      <span class="footer-copy">© <span id="current-year">2025</span> Malar</span>
+    </footer>
+  </body>
 </html>
